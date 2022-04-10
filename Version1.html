@@ -1,0 +1,137 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+
+
+
+	
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		background-color: #efefef;
+		font-family: sans-serif;
+		background-image: url("https://www.pikpng.com/pngl/m/203-2037448_transparent-background-groceries-png-png-download-clipart.png");
+	}
+	
+	h2, p, label{
+		font-family: "Copperplate", "Lucida Console", "Courier New", monospace;
+		color: green;
+	
+	}
+	
+
+	.contact-box{
+		width: 500px;
+		background-color: #fff;
+		box-shadow: 0 0 20px 0 #999;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		position: absolute;
+		border-radius: 70px;
+	}
+	
+	form{
+		margin: 35px;
+	}
+
+	input[type=text], textarea{
+		width: 400px;
+		height: 40px;
+		margin-top: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+		border: 1px solid #777;
+		border-radius: 14px;
+		outline: none;
+	}
+	
+	textarea {
+		padding: 15px;
+		border-radius: 0px;
+	}
+	
+	Select{
+		width: 400px;
+		height: 40px;
+		margin-top: 5px;   <--20px -->
+		padding-left: 10px;
+		padding-right: 10px;
+		border: 1px solid #777;
+		border-radius: 14px;
+		outline: none;
+	}
+	
+	input[type=submit]{
+		border-radius: 20px;
+		color: #fff;
+		margin-top: 18px;
+		padding: 10px 25px;
+		background-color: #47c35a;
+		font-size: 12px;
+		border: none;
+		pointer: cursor;
+		<--position: absolute;
+		right: 43%; -->
+		
+	}
+
+}
+</style>
+
+<body>
+	<div class="contact-box">
+		<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+		<input type=hidden name="orgid" value="00D8c000007B85D">
+		<input type=hidden name="retURL" value="https://www.blackforce.ca/">
+
+		<!--  ----------------------------------------------------------------------  -->
+		<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+		<!--  these lines if you wish to test in debug mode.                          -->
+		<!--  <input type="hidden" name="debug" value=1>                              -->
+		<!--  <input type="hidden" name="debugEmail"                                  -->
+		<!--  value="blackforcegroup3t@gmail.com">                                    -->
+		<!--  ----------------------------------------------------------------------  -->
+		
+		<h2>Welcome to Global Grocery</h2><br>
+		<p><b>Please complete the form below<b></p><br>
+
+		<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br><br>
+
+		<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br><br>
+
+		<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br><br>
+
+		<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br><br>
+
+		<label for="reason">Case Reason</label><select  id="reason" name="reason"><option value="">--None--</option><option value="Delivery">Delivery</option>
+		<option value="Refunds">Refunds</option>
+		<option value="Price Match">Price Match</option>
+		<option value="Technical Support">Technical Support</option>
+		<option value="Payment Issues">Payment Issues</option>
+		<option value="Feedback">Feedback</option>
+		<option value="Other">Other</option>
+		</select><br><br>
+
+		<label for="description">Description</label><textarea name="description" rows = 10></textarea><br>
+
+		<input type="submit" name="submit">
+
+		</form>
+		
+	</div>
+</body>
